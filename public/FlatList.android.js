@@ -10,12 +10,9 @@ import {
     Text,
     View,
     Button,
-    RefreshControl,
-    Image,
     FlatList
 } from 'react-native';
 
-var ViewPager = require('react-native-viewpager');
 export default class FlatLis extends Component {
 
 
@@ -45,13 +42,12 @@ export default class FlatLis extends Component {
     //布局渲染
     _renderItem=(itemData)=>{
         // let title = '第' +item.index+ '项'+item.item.title;
-        let color = 'gray';
         //此处获得数据需要itemData.item才可以
         // return (
         //     <Text style={{backgroundColor:color}}>{itemData.item.value.desc}</Text>);
 
         return (
-            <Text style={{backgroundColor:color}}>{itemData.index}</Text>);
+            <Text style={{backgroundColor:'gray'}}>{itemData.index}</Text>);
     }
 
     renderView =()=>{

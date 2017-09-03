@@ -82,6 +82,10 @@ export default class WebFetch extends Component {
         this.props.navigation.navigate('ReactNatiFlatList')
     }
 
+    jumpToDiaryList=()=>{
+        this.props.navigation.navigate('Diarys')
+    }
+
 
     render() {
         return (
@@ -116,6 +120,9 @@ export default class WebFetch extends Component {
 
                 <Button onPress={this.jumpList} style={styles.button1} title='lt' >
                 </Button>
+
+                <Button onPress={this.jumpToDiaryList} style={styles.button1} title='Diary' >
+                </Button>
             </View>
         );
     }
@@ -139,7 +146,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     button1:{
-        top:10,
+        marginTop:10,
         padding:10,
         margin:10,
         height:50

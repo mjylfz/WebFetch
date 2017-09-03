@@ -18,14 +18,17 @@ import {
     StackNavigator
 } from 'react-navigation';
 
-import ScrollViewScreen from '/public/ScrollViewTest'
-import MainActivity from '/public/MainActivity'
-import ListViewScreen from '/public/ListViewScreen'
-import PanResponder1 from '/public/PanResponder1'
-import PanResponderMiddle from '/public/PanResponderMiddle'
-import PanResponderMiddleCopy from '/publicPanResponderMiddleCopy'
-import ViewPagerTest from '/public/ViewPagerTest'
-import FlatLis from '/public/FlatList'
+import ScrollViewScreen from './public/ScrollViewTest'
+import MainActivity from './public/MainActivity'
+import ListViewScreen from './public/ListViewScreen'
+import PanResponder1 from './public/PanResponder1'
+import PanResponderMiddle from './public/PanResponderMiddle'
+import PanResponderMiddleCopy from './public/PanResponderMiddleCopy'
+import ViewPagerTest from './public/ViewPagerTest'
+import FlatLis from './public/FlatList'
+import DiaryList from './public/ListViewExam/DiaryList'
+import DiaryEdit from './public/ListViewExam/DiaryEdit'
+import Diary from './public/ListViewExam/Diary'
 
 const SimpleApp = StackNavigator({
         HomeScreen: {screen: MainActivity},
@@ -36,6 +39,9 @@ const SimpleApp = StackNavigator({
         PanResponderMiddleCopy: {screen: PanResponderMiddleCopy},
         ReactNativeViewPager: {screen: ViewPagerTest},
         ReactNatiFlatList: {screen: FlatLis},
+        Diarys:{screen:DiaryList},
+        DEdit:{screen:DiaryEdit},
+        Diary:{screen:Diary}
     }
 );
 
