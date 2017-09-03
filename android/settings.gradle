@@ -1,0 +1,3 @@
+rootProject.name = 'WebFetch'
+
+include ':app'
